@@ -40,16 +40,14 @@ export const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled || !isHomePage 
-        ? "bg-background/95 backdrop-blur-xl border-b border-border shadow-sm" 
-        : "bg-transparent"
+        ? "bg-white/15 backdrop-blur-xl border-b border-white/20 shadow-lg" 
+        : "bg-white/10 backdrop-blur-md border-b border-white/10"
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          {/* Logo with frosted glass effect */}
+          {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className="relative p-2 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
-              <img src={teatherLogo} alt="Teather Connect" className="h-8 md:h-10 w-auto" />
-            </div>
+            <img src={teatherLogo} alt="Teather Connect" className="h-10 md:h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
