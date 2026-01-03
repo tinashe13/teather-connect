@@ -45,9 +45,11 @@ export const Header = () => {
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
+          {/* Logo with frosted glass effect */}
           <Link to="/" className="flex items-center">
-            <img src={teatherLogo} alt="Teather Connect" className="h-10 md:h-12 w-auto" />
+            <div className="relative p-2 rounded-xl bg-white/20 backdrop-blur-md border border-white/30 shadow-lg">
+              <img src={teatherLogo} alt="Teather Connect" className="h-8 md:h-10 w-auto" />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
