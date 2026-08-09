@@ -1,0 +1,11 @@
+---
+# cPanel Git Version Control deployment configuration
+# Replace <cpanel-username> with your actual cPanel username before deploying.
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/<cpanel-username>/public_html
+    - export NODE_VERSION=20
+    - /bin/npm install
+    - /bin/npm run build
+    - /bin/rm -rf $DEPLOYPATH/*
+    - /bin/cp -R dist/* $DEPLOYPATH/
