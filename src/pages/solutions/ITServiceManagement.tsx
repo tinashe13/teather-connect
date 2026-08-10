@@ -73,7 +73,7 @@ const ITServiceManagement = () => (
                     <step.icon className="w-6 h-6 text-accent" />
                   </motion.div>
                   <span className="text-accent text-sm font-medium">Step {index + 1}</span>
-                  <h3 className="text-lg font-semibold text-primary-foreground mt-1 mb-2">{step.title}</h3>
+                  <h2 className="text-lg font-semibold text-primary-foreground mt-1 mb-2">{step.title}</h2>
                   <p className="text-primary-foreground/60 text-sm">{step.description}</p>
                 </div>
                 

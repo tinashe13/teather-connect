@@ -31,9 +31,9 @@ const Solutions = () => (
             {services.map((service, index) => (
               <motion.div key={service.title} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: index * 0.1 }} className="bg-card border rounded-2xl p-8 hover:border-accent/50 transition-all group">
                 <service.icon className="w-12 h-12 text-accent mb-6" />
-                <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
+                <h2 className="text-2xl font-semibold mb-4">{service.title}</h2>
                 <p className="text-muted-foreground mb-6">{service.description}</p>
-                <Link to={service.href} className="inline-flex items-center gap-2 text-accent font-medium hover:gap-3 transition-all">Learn more <ArrowRight className="w-4 h-4" /></Link>
+                <Link to={service.href} className="inline-flex items-center gap-2 text-accent font-medium hover:gap-3 transition-all">View {service.title.toLowerCase()} details <ArrowRight className="w-4 h-4" /></Link>
               </motion.div>
             ))}
           </div>

@@ -215,7 +215,7 @@ const InformationSecurity = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: activeCard === index ? 1 : 0 }}
                   >
-                    <Link to="/contact" className="text-accent text-sm font-medium">Learn more →</Link>
+                    <Link to="/contact" className="text-accent text-sm font-medium">Talk to us about {type.title.toLowerCase()} →</Link>
                   </motion.div>
                 </motion.div>
               ))}

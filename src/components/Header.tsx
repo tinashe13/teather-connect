@@ -98,7 +98,7 @@ export const Header = () => {
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
             <a 
-              href="tel:+1234567890" 
+              href="tel:+263242123456" 
               className={`flex items-center gap-2 transition-colors ${
                 isScrolled || !isHomePage 
                   ? "text-foreground/80 hover:text-accent" 
@@ -106,7 +106,7 @@ export const Header = () => {
               }`}
             >
               <Phone className="w-4 h-4" />
-              <span className="font-medium">Enquiries</span>
+              <span className="font-medium">+263 24 212 3456</span>
             </a>
             <Button variant="accent" size="default" asChild>
               <Link to="/contact">Contact Us</Link>
@@ -116,6 +116,8 @@ export const Header = () => {
           {/* Mobile Menu Button */}
           <button 
             className={`lg:hidden p-2 ${isScrolled || !isHomePage ? "text-foreground" : "text-primary-foreground"}`}
+            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

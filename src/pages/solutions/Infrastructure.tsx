@@ -130,7 +130,7 @@ const Infrastructure = () => {
                   >
                     {activeLayer !== null && (
                       <>
-                        <h4 className="text-accent font-semibold mb-2">{layers[activeLayer].title}</h4>
+                        <h2 className="text-accent font-semibold mb-2">{layers[activeLayer].title}</h2>
                         <ul className="space-y-1">
                           {layers[activeLayer].items.map((item) => (
                             <li key={item} className="text-primary-foreground/70 text-sm flex items-center gap-2">

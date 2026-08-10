@@ -96,7 +96,7 @@ export const Services = () => {
                 to={service.href}
                 className="inline-flex items-center gap-2 text-accent font-medium hover:gap-3 transition-all group/link"
               >
-                Learn more 
+                View {service.title.toLowerCase()} details
                 <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
               </Link>
             </motion.div>
