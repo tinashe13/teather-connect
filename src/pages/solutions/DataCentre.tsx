@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Server, Database, Wifi, Monitor, HardDrive, Shield, Thermometer, Cable, Cloud } from "lucide-react";
@@ -25,6 +26,7 @@ const features = [
 
 const DataCentre = () => (
   <div className="min-h-screen bg-background">
+    <Seo title="Data Centre Solutions | Teather Connect" description="Dedicated data centre facilities housing servers, storage, networking, cooling and physical security." path="/solutions/data-centre" jsonLd={{ "@context": "https://schema.org", "@type": "Service", name: "Data Centre Solutions", description: "Dedicated facilities housing IT infrastructure like servers, storage, networking, backup, cooling and monitoring.", provider: { "@type": "Organization", name: "Teather Connect" } }} />
     <Header />
     <main className="pt-20">
       {/* Hero with animated data center visualization */}

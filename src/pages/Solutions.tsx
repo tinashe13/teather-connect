@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -13,6 +14,7 @@ const services = [
 
 const Solutions = () => (
   <div className="min-h-screen bg-background">
+    <Seo title="IT Solutions | Teather Connect" description="Explore Teather Connect solutions: data centre, information security, IT service management and infrastructure." path="/solutions" />
     <Header />
     <main className="pt-20">
       <section className="py-24 bg-primary">

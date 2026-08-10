@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Settings, Package, GitBranch, Headphones, AlertCircle, FileText, ArrowRight, Check, Users, Workflow, Gauge } from "lucide-react";
@@ -21,6 +22,7 @@ const services = [
 
 const ITServiceManagement = () => (
   <div className="min-h-screen bg-background">
+    <Seo title="IT Service Management | Teather Connect" description="Design, deliver, manage and improve IT services to meet business goals and end-user experience." path="/solutions/it-service-management" jsonLd={{ "@context": "https://schema.org", "@type": "Service", name: "IT Service Management", description: "Designing, delivering, managing and improving IT services to meet business goals.", provider: { "@type": "Organization", name: "Teather Connect" } }} />
     <Header />
     <main className="pt-20">
       {/* Hero with Process Flow */}
