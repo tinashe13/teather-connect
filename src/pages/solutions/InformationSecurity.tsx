@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Shield, Cloud, AlertTriangle, Lock, Bug, Server, Eye, FileWarning, KeyRound, ShieldCheck, Fingerprint, Scan } from "lucide-react";
@@ -27,6 +28,7 @@ const InformationSecurity = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo title="Information Security | Teather Connect" description="Protect information and systems from unauthorized access, use, disclosure or destruction." path="/solutions/information-security" jsonLd={{ "@context": "https://schema.org", "@type": "Service", name: "Information Security", description: "Protecting information and systems from unauthorized access, use, disclosure or destruction.", provider: { "@type": "Organization", name: "Teather Connect" } }} />
       <Header />
       <main className="pt-20">
         {/* Hero with Shield Animation */}
@@ -213,7 +215,7 @@ const InformationSecurity = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: activeCard === index ? 1 : 0 }}
                   >
-                    <Link to="/contact" className="text-accent text-sm font-medium">Learn more →</Link>
+                    <Link to="/contact" className="text-accent text-sm font-medium">Talk to us about {type.title.toLowerCase()} →</Link>
                   </motion.div>
                 </motion.div>
               ))}

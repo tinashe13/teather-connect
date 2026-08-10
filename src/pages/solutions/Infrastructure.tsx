@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { HardDrive, Cpu, Cloud, Database, Monitor, Wifi, Server, Layers, Box } from "lucide-react";
@@ -44,6 +45,7 @@ const Infrastructure = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo title="Infrastructure Solutions | Teather Connect" description="Hardware, software, network and components that support reliable business operations." path="/solutions/infrastructure" jsonLd={{ "@context": "https://schema.org", "@type": "Service", name: "Infrastructure Solutions", description: "Combination of hardware, software, network and components that support business operations.", provider: { "@type": "Organization", name: "Teather Connect" } }} />
       <Header />
       <main className="pt-20">
         {/* Hero with 3D Stack Visualization */}
@@ -128,7 +130,7 @@ const Infrastructure = () => {
                   >
                     {activeLayer !== null && (
                       <>
-                        <h4 className="text-accent font-semibold mb-2">{layers[activeLayer].title}</h4>
+                        <h2 className="text-accent font-semibold mb-2">{layers[activeLayer].title}</h2>
                         <ul className="space-y-1">
                           {layers[activeLayer].items.map((item) => (
                             <li key={item} className="text-primary-foreground/70 text-sm flex items-center gap-2">

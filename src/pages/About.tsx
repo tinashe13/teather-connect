@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { Seo } from "@/components/Seo";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
 import { Target, Eye, Shield, Users, Zap } from "lucide-react";
@@ -12,6 +13,7 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Seo title="About Us | Teather Connect" description="Learn about Teather Connect: our mission, vision and core values as a trusted IT solutions and technology services company." path="/about" />
       <Header />
       <main className="pt-20">
         <section className="py-24 bg-primary">
